@@ -1,0 +1,164 @@
+@import "./fonts.css";
+@import "./reset.css";
+
+.hero {
+  margin-top: 50px;
+  position: relative;
+}
+
+.hero .blur {
+  top: 0;
+  right: 0;
+}
+
+.hero__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__text-block {
+  margin-left: 20px;
+}
+
+.hero__title {
+  max-width: 941px;
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 90px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.hero__title span {
+  color: #bea0ff;
+}
+
+.hero__subtitle {
+  color: #b0b0d1;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 40px;
+  max-width: 560px;
+  margin-top: 20px;
+}
+
+.hero__subtitle span {
+  color: #f53e46;
+}
+
+.hero__button {
+  margin-top: 40px;
+  padding: 20px 90px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.hero__img-block {
+  position: relative;
+  margin-top: -50px;
+}
+
+.hero__img-student {
+  position: absolute;
+  top: 90px;
+  left: 185px;
+  width: 260px;
+  animation: student-animate 2s infinite alternate-reverse;
+}
+
+.hero__img-bg {
+  width: 90%;
+}
+
+.hero__img-gift {
+  display: none;
+}
+
+.hero__img-star {
+  display: none;
+}
+
+@keyframes student-animate {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+@media (max-width: 1300px) {
+  .hero__title {
+    font-size: 60px;
+  }
+} 
+
+@media (max-width: 1200px) {
+  .hero__text-block {
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .hero__img-gift {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: -50px;
+  }
+
+  .hero__img-star {
+    display: block;
+    position: absolute;
+    bottom: 100px;
+    right: -30px;
+    rotate: -45deg;
+    width: 75px;
+    height: 75px;
+  }
+
+  .hero__title {
+    text-align: center;
+  }
+
+  .hero__subtitle {
+    text-align: center;
+    margin-top: 26px;
+  }
+
+  .hero__img-block {
+    display: none;
+  }
+
+  .hero__button {
+    padding: 24px 150px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .hero__img-gift {
+    display: none;
+  }
+
+  .hero__img-star {
+    display: none;
+  }
+
+  .hero__title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero__title {
+    font-size: 50px;
+    line-height: 70px;
+  }
+}

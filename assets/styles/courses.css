@@ -1,0 +1,151 @@
+.courses {
+  margin-top: 50px;
+  padding: 20px 0px;
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 26px;
+  margin-top: 50px;
+}
+
+.card {
+  background: #381d74;
+  color: #fff;
+  border-radius: 30px;
+}
+
+.card__img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.card__top {
+  padding: 24px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.card__time {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 10px;
+}
+
+.card__time img {
+  width: 22px;
+  height: 22px;
+}
+
+.card__time span {
+  color: #d9ecff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.card__course {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: 15px;
+}
+
+.card-small-block {
+  width: 69px;
+  height: 32px;
+  border-radius: 17px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #8c78bf;
+}
+
+.card-small-block span {
+  color: #8c78bf;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card-small-category {
+  height: 32px;
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  padding: 0px 12px;
+  border: 1px solid #8c78bf;
+}
+
+.card-small-category p {
+  color: #8c78bf;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  width: 100%;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  background: #4a2c8d;
+}
+
+.card__bottom p {
+  color: #d9ecff;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 1px;
+}
+
+.card__btn {
+  padding: 16px 28px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  border-radius: 12px;
+  background: #7f56d9;
+  transition: 0.4s all ease-in-out;
+}
+
+.card__btn:hover {
+  background: #6140a8;
+}
+
+.card__title {
+  color: #d9ecff;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 1px;
+}
+
+.card__subtitle {
+  color: #8c78bf;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-top: 5px;
+}
+
+.all__courses {
+  margin: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.card-hidden {
+  display: none;
+}

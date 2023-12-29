@@ -1,0 +1,45 @@
+@import "./fonts.css";
+@import "./reset.css";
+
+.container {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 30px;
+}
+
+.title {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.title span {
+  color: #7f56d9;
+}
+
+.button {
+  background: #7f56d9;
+  border-radius: 47px;
+  padding: 16px 28px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 28px;
+  transition: 0.4s all ease-in-out;
+}
+
+.button:hover {
+  background: #503094;
+}
+
+.blur {
+  width: 426px;
+  height: 426px;
+  position: absolute;
+  z-index: -999;
+  border-radius: 50%;
+  background: rgba(61, 92, 255, 0.2);
+  filter: blur(150px);
+}
